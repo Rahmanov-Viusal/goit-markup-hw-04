@@ -149,7 +149,20 @@ body {
 
   background-color: var(--bg-footer);
 }
-
+.overlay {
+  min-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/overlay-img/occupation.img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 /* заголовок в hero */
 .section-hero .main-heading {
   display: block;
@@ -214,6 +227,14 @@ body {
 }
 .feature-list :nth-child(4n) {
   margin-right: 0px;
+}
+/* ====== logo-item ======  */
+.feature-list .item::before {
+  content: "";
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  outline: 2px solid red;
 }
 
 /* подзаголовки секции "о нас" */
@@ -301,6 +322,69 @@ body {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
+}
+/* ======== customers ======== */
+.customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.customers .customers-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.customers-list .link {
+  content: "";
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  width: 170px;
+  height: 90px;
+
+  background-color: var(--bg-main-page-color);
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.customers-list .item :nth-child(1n) {
+  margin-left: 0px;
+}
+.customers-list {
+  display: block;
+}
+
+.customers-list :hover,
+.customers-list :focus {
+  border-color: var(--bg-button-color);
+}
+.customers-list :nth-child(1n) {
+  background-image: url(/img/sprite/company1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.customers-list :nth-child(2n) {
+  background-image: url(/img/sprite/company2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.customers-list :nth-child(3n) {
+  background-image: url(/img/sprite/company3.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.customers-list :nth-child(4n) {
+  background-image: url(/img/sprite/company4.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.customers-list :nth-child(5n) {
+  background-image: url(/img/sprite/company5.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.customers-list :nth-child(6n) {
+  background-image: url(/img/sprite/company6.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /* ======footer====== */
 .footer-text {
