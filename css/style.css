@@ -239,7 +239,7 @@ body {
 /*====== feature ====== */
 .section-feature {
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 47px;
 }
 .feature-list {
   display: flex;
@@ -292,7 +292,7 @@ body {
 
 /* ======== occupation ======== */
 .occupation {
-  padding-top: 94px;
+  padding-top: 47px;
   padding-bottom: 94px;
 }
 .section-title {
