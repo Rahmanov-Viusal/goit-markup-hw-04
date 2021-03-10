@@ -11,6 +11,7 @@
   --bg-footer: #2f303a;
   --color-contact-footer: #ffffff 60 %;
   --bg-section-team: #f5f4fa;
+  --bg-social-footer: rgba(255, 255, 255, 0.1);
 }
 /* ======глобальнвй сброс======= */
 h1,
@@ -368,41 +369,37 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.social-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 5px;
-  margin-left: 5px;
+
+  color: var(--desc-text-color);
   width: 44px;
   height: 44px;
 
-  cursor: pointer;
-
   border-radius: 50%;
 }
-.social :nth-child(1n) {
+.social-item {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.social :nth-child(1) {
   margin-left: 0;
 }
 .social :nth-child(4n) {
   margin-right: 0;
 }
 .social-svg {
+  fill: currentColor;
   width: 20px;
   height: 20px;
-
-  fill: var(--desc-text-color);
 }
-.social-item :hover .social-svg,
-.social-item :focus .social-svg {
-  fill: var(--bg-main-page-color);
-  background-color: #188ce8;
-  width: 44px;
-  height: 44px;
-
-  border-radius: 50%;
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--bg-button-color);
+  color: var(--bg-main-page-color);
 }
+
 /* ======== customers ======== */
 .customers {
   padding-top: 94px;
@@ -413,30 +410,51 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.customers-list .link {
-  content: "";
+.company-link {
   display: flex;
   align-items: center;
-  margin-left: 30px;
+  justify-content: center;
+
+  color: var(--desc-text-color);
   width: 170px;
   height: 90px;
 
-  background-color: var(--bg-main-page-color);
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.customers-list .item :nth-child(1n) {
-  margin-left: 0px;
-}
-.customers-list {
-  display: block;
-}
 
-.customers-list :hover,
-.customers-list :focus {
+.company-svg {
+  fill: currentColor;
+}
+.company1 {
+  width: 44px;
+  height: 49px;
+}
+.company2 {
+  width: 40px;
+  height: 52px;
+}
+.company3 {
+  width: 41px;
+  height: 43px;
+}
+.company4 {
+  width: 80px;
+  height: 42px;
+}
+.company5 {
+  width: 59px;
+  height: 47px;
+}
+.company6 {
+  width: 88px;
+  height: 45px;
+}
+.company-link:hover,
+.company-link:focus {
+  color: var(--bg-button-color);
   border-color: var(--bg-button-color);
 }
-
 /* ======footer====== */
 .footer-text {
   color: var(--button-color);
@@ -473,6 +491,45 @@ body {
 }
 .contact-footer .list.map {
   margin-top: 20px;
+}
+/* =====social footer===== */
+.flex {
+  display: flex;
+  align-items: baseline;
+}
+.social-footer {
+  display: flex;
+  margin-left: 85px;
+}
+.social-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--bg-main-page-color);
+}
+
+.footer-list {
+  display: flex;
+  margin-top: 20px;
+}
+.footer-list .social-link {
+  color: var(--bg-main-page-color);
+  background-color: var(--bg-social-footer);
+}
+.footer-list .social-link:hover,
+.footer-list .social-link:focus {
+  background-color: var(--bg-button-color);
+}
+
+.footer-list :nth-child(1) {
+  margin-left: 0;
+}
+.footer-list :nth-child(4n) {
+  margin-right: 0;
 }
 /*========================= PORTFOLIO =============================*/
 .project {
